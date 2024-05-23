@@ -1,0 +1,287 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+aside { 
+    grid-area: ordenar; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    color: white;
+}
+.btn{
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    width: 70%;
+}
+.menu {
+    grid-area: menu;
+    display: flex;
+}
+.menu a {
+    color: white;
+}
+.logo_card {
+    width: 50px;
+}
+main {
+    background-color: rgb(3, 10, 61);
+    grid-area: card;
+}
+.card{
+    width: 85%;
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: rgb(69, 191, 248);
+}
+.nombre_personaje {
+    display: flex;
+    justify-content:flex-start;
+    width: 100%;
+    align-items: center;
+}
+.descipcion {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+}
+.foto_personaje {
+    width: 90%;
+}
+footer {
+background-color: green;
+grid-area: pie;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-color: black;
+color: white;
+}
+.redes{
+    text-align: center;
+}
+.redes img {
+    width: 25px;
+    border-radius: 50%;
+}
+.num_pag{
+    display: flex;
+}
+.num {
+    border: 2px solid rgb(101, 93, 93);
+    padding: 10px;
+    color: cyan;
+}
+.btn_card{
+    background-color: rgb(5, 13, 233);
+    width: 50%;
+    padding: 5px;
+}
+.btn_card a{
+    color: white;
+}
+.fot_foot {
+    width: 200px;}
+
+
+
+    @media screen and (max-width: 756px){   
+        body {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.2fr 75px 5fr 150px;
+            grid-template-areas:
+            'menu'
+            'ordenar'
+            'card'
+            'pie';
+        }
+        .menu{
+            flex-direction: row;
+            justify-content: space-between;
+            height: 50px;
+        }
+        .link_nav {
+            display: none;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .menu h3{
+            display: none;
+        }
+        .logo {
+            150px;
+        }
+        .fot_foot {
+            width: 200px;}
+        .tarjeta {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .menu {
+            background: rgb(4,4,4);
+        background: linear-gradient(90deg, rgba(4,4,4,1) 0%, rgba(9,7,242,1) 100%);
+        }
+        aside {
+            background-color: rgb(4,4,4);
+            background: linear-gradient(152deg, rgba(4,4,4,1) 0%, rgba(9,7,242,1) 100%);;
+        }
+        }
+        
+
+@media screen and (min-width: 757px){   
+body{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-areas:
+    'menu ordenar'
+    'menu card'
+    'pie card';
+}
+.tarjeta {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-content: center;
+}
+.logo {
+    width: 100%;
+}
+.logo:hover{
+    filter: brightness(2.5);
+}
+.menu {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: black;
+}
+.hamburguesa {
+    display: none;
+}
+.elem_nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.menu h3 {
+    color: yellow;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+aside {
+    background: rgb(4,4,4);
+background: linear-gradient(49deg, rgba(4,4,4,1) 0%, rgba(9,7,242,1) 100%);
+}
+.link_nav:hover{
+    color: yellow;
+}
+
+    /*****cambios PERSONALIZADOS para cada persobaje**********/
+    .card:hover{
+        filter: brightness(2.5);
+    }
+    
+    .card1:hover {
+        box-shadow: 0 0 0 2px rgb(199, 10, 199);
+    }
+    .nombre1{
+        color:rgb(199, 10, 199);
+    }
+    
+    .card2:hover {
+        box-shadow: 0 0 0 2px aqua;
+    }
+    .nombre2{
+        color: aqua;
+    }
+
+    .card3:hover {
+        box-shadow: 0 0 0 2px rgb(215, 6, 89);
+    }
+    .nombre3{
+        color: rgb(215, 6, 89);
+    }
+
+    .card4:hover {
+        box-shadow: 0 0 0 2px rgb(50, 124, 204);
+    }
+    .nombre4{
+        color: rgb(50, 124, 204);
+    }
+
+    .card5:hover {
+        box-shadow: 0 0 0 2px rgb(204, 117, 50);
+    }
+    .nombre5{
+        color: rgb(200, 127, 71);
+    }
+
+    .card6:hover {
+        box-shadow: 0 0 0 2px rgb(175, 39, 73);
+    }
+    .nombre6{
+        color: rgb(175, 39, 73);
+    }
+
+    .card7:hover {
+        box-shadow: 0 0 0 2px green;
+    }
+    .nombre7{
+        color: rgb(39, 175, 114);
+    }
+
+    .card8:hover {
+        box-shadow: 0 0 0 2px rgb(134, 68, 9);
+    }
+    .nombre8{
+        color: orange;
+    }
+
+    .card9:hover {
+        box-shadow: 0 0 0 2px rgb(167, 7, 92);
+    }
+    .nombre9{
+        color:deeppink;
+    }
+
+    .card10:hover {
+        box-shadow: 0 0 0 2px firebrick;
+    }
+    .nombre10{
+        color:rgb(244, 42, 42);
+    }
+
+    .card11:hover {
+        box-shadow: 0 0 0 2px rgb(118, 11, 144);
+    }
+    .nombre11{
+        color:rgb(183, 22, 224);
+    }
+
+    .card12:hover {
+        box-shadow: 0 0 0 2px rgb(10, 63, 123);
+    }
+    .nombre12{
+        color:rgb(64, 139, 224);
+    }
+ }
